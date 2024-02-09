@@ -113,28 +113,28 @@ Two ways to do it :
 
 
             function App() {
-            const [title, setTitle] = useState("7");
+                const [title, setTitle] = useState("7");
 
-            function random(){
-            const result = Math.random();
-            setTitle(result);
-            }
+                function random(){
+                    const result = Math.random();
+                    setTitle(result);
+                }
 
-            return (
-            <div> 
-            <button onClick={random}> Click Me!!</button><br />
-            <Header title={"Random number :" + title}></Header><br />
-            <Header title={"Inesh Reddy"}></Header><br />
-            <Header title={"Inesh Reddy"}></Header><br />
-            <Header title={"Inesh Reddy"}></Header><br />
-            </div>
-            )
+                return (
+                <div> 
+                    <button onClick={random}> Click Me!!</button><br />
+                    <Header title={"Random number :" + title}></Header><br />
+                    <Header title={"Inesh Reddy"}></Header><br />
+                    <Header title={"Inesh Reddy"}></Header><br />
+                    <Header title={"Inesh Reddy"}></Header><br />
+                </div>
+                )
             }
 
             const Header = React.memo(function Header({title}){
-            return <div>
-            {title}
-            </div>
+                return <div>
+                    {title}
+                </div>
             })
 
             export default App
